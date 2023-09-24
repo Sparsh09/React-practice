@@ -50,7 +50,7 @@ export const Body = () => {
           Search
         </button>
       </div>
-      <div className="restrauant-list">
+      <div className="flex flex-wrap">
         {filterRestro.map((c) => {
           return (
             <Link to={"/restaurant/" + c.id}>

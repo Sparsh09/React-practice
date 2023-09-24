@@ -14,7 +14,7 @@ class About extends Component {
     return (
       <div>
         <h1>About Us page</h1>
-        <p>We're the Food Villa 😄 </p>
+        <p>We're the Food Train 😄 </p>
         {/* <Outlet /> */}
         <ProfileClass />
         <ProfileComponent name={"Sparsh"} />
