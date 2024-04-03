@@ -88,3 +88,14 @@ body {
     transform-origin: center center;
     transition: all 0.1s ease-in 0s;
 }
+
+
+.filter-btn {
+    background-color: lightblue;
+    height: 1.8rem;
+    width: auto;
+    border-radius: 1rem;
+    margin: 10px;
+    color: darkviolet;
+    cursor: pointer;
+}
