@@ -1,13 +1,17 @@
+import { useState } from "react";
 import Counter from "./Counter";
-import CounterButton from "./CounterButton";
+import ResetBtn from "./ResetBtn";
 import CounterUpdate from "./CounterUpadte";
 import Title from "./Title";
 
 export default function Card() {
-    return <div>
+
+  const [counterValue , setCounterValue]= useState(0);
+
+    return <div className="counter">
     <Title></Title>
-    <Counter></Counter>
-    <CounterButton btnName="Reset"></CounterButton>
-   <CounterUpdate></CounterUpdate>
+    <Counter counterValue={counterValue}></Counter>
+    <ResetBtn resetCount={setCounterValue}></ResetBtn>
+   <CounterUpdate updateCounterValue={setCounterValue}></CounterUpdate>
   </div>
 }

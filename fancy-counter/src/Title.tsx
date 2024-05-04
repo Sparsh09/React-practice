@@ -1,3 +1,3 @@
 export default function Title() {
-  return <h1>Fancy Counter</h1>;
+  return <h1 className="counter-title">Amazing Counter</h1>;
 }

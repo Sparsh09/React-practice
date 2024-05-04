@@ -1,5 +1,7 @@
-export default function Counter () {
-    return <div>
-        <h3>3</h3>
+export default function Counter ({counterValue}) {
+    return <div className="counter-value">
+        <h3 onClick={() => {
+            console.log("Click");
+        }}>{counterValue}</h3>
     </div>
 }

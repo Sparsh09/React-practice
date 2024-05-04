@@ -1,1 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+    all: unset;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    background-image: radial-gradient(ellipse, #004953, #000c29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .counter {
+    background-color: #27b2f2;
+    width: 476px;
+    height: 615px;
+    border-radius: 12px;
+    box-shadow: 0 25px 121px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s;
+  }
+
+  
+  .counter-title {
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px;
+    text-align: center;
+    line-height: 0.9;
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 60px;
+  }
+  
+  .counter-value {
+    color: #070f25;
+    font-size: 200px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+
+  .counter-buttons {
+    background-color: #071425;
+    height: 116px;
+    width: 100%;
+    margin-top: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+  }
+  
+  .counter-button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #e8f227;
+  }
+  .reset-btn {
+    display: flex;
+    flex: none;
+    width: 90px;
+    height: 40px !important;
+    background-color: #004853 !important;
+    border-radius: 100px;
+  }
+  
+  .counter-button:hover {
+    background-color: #060f2b;
+  }
   
