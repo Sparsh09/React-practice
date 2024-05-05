@@ -4,16 +4,16 @@ import { useState } from "react";
 
 export default function Container() {
   const [text, setText] = useState("");
-  const numberOfCharachters = text.length;
-  const numberOfWords = text.split(" ").length;
-
+  const stats = {
+    numberOfCharachters: text.length,
+    numberOfWords: text.split(/\s/).filter((word) => word !== "").length,
+    instagramCharacterLeft: 280 - text.length,
+    xCharacterLeft: 200 - text.length,
+  };
   return (
     <div className="container">
       <TextAreaComponent text={text} setText={setText} />
-      <AnalyticsComponent
-        numberOfCharachters={numberOfCharachters}
-        numberOfWords={numberOfWords}
-      />
+      <AnalyticsComponent stats={stats} />
     </div>
   );
 }
