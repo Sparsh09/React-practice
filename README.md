@@ -15,3 +15,7 @@
         - Bundling
         - Compressing
         - Tree Shaking - remove unused code
+
+## 03-react
+
+## Amazing Counter Project - Counter Project to practice the basics of React fundamentals.
